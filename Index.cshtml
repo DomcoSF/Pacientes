@@ -1,0 +1,17 @@
+﻿@model IEnumerable<PacienteNet.Models.Paciente>
+
+@{
+    ViewBag.Title = "Pesquisa de Pacientes";
+}
+
+<h2>Pesquisar</h2>
+@using (@Html.BeginForm("Pesquisar", "Pacientes", FormMethod.Post))
+{
+    <div>
+        @Html.TextBox("NomePaciente")
+        <input type="submit" value="Pesquisar"/>
+    </div>
+}
+<table class="table">
+    @Html.Partial("List")
+</table>

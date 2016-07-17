@@ -1,0 +1,82 @@
+﻿@model PacienteNet.Models.Paciente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Paciente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomPaciente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomMae)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomMae)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DtaNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DtaNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroCNS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroCNS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFamilia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdFamilia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Casa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Casa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdPaciente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
